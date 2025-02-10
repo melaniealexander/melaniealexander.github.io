@@ -1,0 +1,103 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+body{
+    background-color: rgb(221, 221, 221);
+}
+
+/*picture of lasagna on plate*/
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+    padding-bottom: 1em;
+}
+/*caption for the picture*/
+figcaption{
+    color: rgb(12,12,12);
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding: 1em 1em 1em 1.5rem;
+}
+/*orange banner*/
+header{
+    background-color: rgb(251,127,39);
+    padding: 3em 0em 1.5em 1.5rem;
+}
+/*Johnsonville Italian Sausage Lasagna*/
+h1{
+    font-size: 2em;
+    color: rgb(249,249,249);
+    font-family: Sutro, serif;
+    font-weight:bold;
+    font-style: normal;
+}
+/*A classic family favorite*/
+h2{
+    font-size: 1.5em;
+    color: rgb(253,216,182);
+    font-family: Sutro, serif;
+    font-weight:300;
+    font-style: normal;
+    padding: 0.5em 0em 0.1em 0em;
+}
+/*ingredients and directions*/
+h3{
+    font-size: 1.2em;
+    color: rgb(251,127,39);
+    font-family: Sutro, serif;
+    font-weight:500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 0.5em 1.5em 0em 0em;
+    margin: 1em 1.5em;
+    border-top: 2px solid rgb(251,127,39);
+}
+/*list items*/
+li{
+    margin: 0em 0em 1em;
+}
+/*quantity of ingredients*/
+ul{
+    color: rgb(12,12,12);
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5em 1.5rem 1em;
+}
+/*recipe directions*/
+ol{
+    color: rgb(12,12,12);
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    padding: 0.5em 1.5em 2em 1.5rem;
+}
+/*bottom orange banner*/
+footer{
+    background-color: rgb(251,127,39);
+    color: rgb(235,233,231);
+    font-size: 1em;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 1em 0em 1em 1.5rem;
+}
+
+figure{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.container{
+   max-width: 60em;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
