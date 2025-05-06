@@ -6,7 +6,7 @@ img {
     width: 100%;
     display: block;
 }
-div.container{
+div.container, div.home-container{
     max-width: 40em;
     margin: auto;
 }
@@ -21,16 +21,20 @@ h2{
     color: rgb(89,116,167);
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 1rem;
+    margin-top: 0.1em;
 }
 .secondary-story-teaser h2{
     font-size: 1.5rem;
 }
+.secondary-story-teaser aside{
+    font-size: 1.25rem;
+}
 .tertiary-story-teaser h2{
     font-size: 1.3em;
     border-top: 1px solid rgb(89,116,167);
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
+
 p {
     font-family: sans-serif;
     font-weight: normal;
@@ -51,6 +55,7 @@ a{
     color: rgb(89,116,167);
     font-weight: bold;
 }
+
 aside{
     background-color: rgb(203, 208, 255);
     padding: 0.5rem;
@@ -68,7 +73,8 @@ nav ul li{
 footer{
     padding: 1em .5em 0.2em;
     background-color:rgb(89,116,167);
-    color: white;
+    color: rgb(255,255,255);
+    box-sizing: border-box;
 }
 section p, article p {
     margin-bottom: 1.25em;
@@ -83,6 +89,96 @@ section p, article p {
     nav ul li{
         display: inline;
     }
+}
+@media only screen and (min-width: 60em){
+
+    div.home-container{
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+    div.container{
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    header, footer{
+        grid-column: 1/3;
+    }
+
+    div.home-container main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.home-container aside{
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    div.container aside{
+        margin-top: 0;
+    }
+    .tertiary-story-teaser aside{
+        padding-top: none;
+    }
+
+    .main-story-teaser {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    .main-story-teaser a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-story-teaser a figure{
+        flex: 1 0 12em;
+        display: flex;
+    }
+    .main-story-teaser a figure img{
+        object-fit: cover;
+    }
+    .main-story-teaser a h2{
+        flex: 0 0 1em;
+    }
+    .main-story-teaser a p{
+        flex: 0 0 4em;
+    }
+
+    .secondary-story-teaser {
+        display: grid;
+    }
+
+    .secondary-story-teaser a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    .secondary-story-teaser a figure{
+        flex: 1 0 12em;
+        display: flex;
+    }
+    .secondary-story-teaser a figure img{
+        object-fit: cover;
+    }
+    .secondary-story-teaser a h2{
+        flex: 0 0 1em;
+    }
+    .secondary-story-teaser a p{
+        flex: 0 0 4em;
+    }
+
+   
 }
 
 
