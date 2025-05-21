@@ -11,14 +11,14 @@ div.container, div.home-container{
     margin: auto;
 }
 h1{
-    font-family: serif;
+    font-family: futura-pt;
     width: 10em;
     padding-bottom: 1.3rem;
     margin-top: 1rem;
 }
 h2{
-    font-family: serif;
-    color: rgb(89,116,167);
+    font-family: futura-pt;
+    color: #FF6648;
     font-weight: bold;
     font-size: 3rem;
     margin-top: 0.1em;
@@ -31,14 +31,14 @@ h2{
 }
 .tertiary-story-teaser h2{
     font-size: 1.3em;
-    border-top: 1px solid rgb(89,116,167);
+    border-top: 1px solid #0259DD;
     padding-top: 0.5rem;
 }
-
 p {
-    font-family: sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-weight: normal;
     padding-bottom: 1.5rem;
+    font-size: 1.05em;
 }
 header, h2, p, figcaption{
     padding-left: 0.5rem;
@@ -47,17 +47,18 @@ header, h2, p, figcaption{
 figcaption {
     margin: 0.5rem 0 2rem;
     font-style: italic;
-    font-family: sans-serif;
+    font-family: futura-pt;
     color: rgb(85, 85, 85);
 }
 a{
     text-decoration: none;
-    color: rgb(89,116,167);
+    color: #84AFFB;
     font-weight: bold;
+    
 }
 
 aside{
-    background-color: rgb(203, 208, 255);
+    background-color: #FFE1D7;
     padding: 0.5rem;
 }
 nav{
@@ -65,21 +66,26 @@ nav{
 }
 nav ul li{
     list-style-type: none;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
-    margin-right: 1rem;
+    font-family: mencken;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-family: futura-pt;
+
 }
 footer{
     padding: 1em .5em 0.2em;
-    background-color:rgb(89,116,167);
+    background-color: #84AFFB;
     color: rgb(255,255,255);
     box-sizing: border-box;
+    
+
 }
 section p, article p {
     margin-bottom: 1.25em;
     line-height: 1.25em;
     color: rgb(0, 0, 0);
+    
 }
 
 @media (min-width: 40em) {
@@ -180,5 +186,3 @@ section p, article p {
 
    
 }
-
-
