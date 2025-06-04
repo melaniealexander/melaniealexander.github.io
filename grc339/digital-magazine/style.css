@@ -186,7 +186,6 @@ nav.photogallery label:hover {
 }
 
 /* nav photo selected effects */
-.photo-gallery input[type="radio"]:checked + * + nav.photogallery label:nth-child(1) img,
 .photo-gallery input[type="radio"]:nth-of-type(1):checked ~ nav.photogallery label:nth-child(1) img {
     border-color:#FF6648;
     box-shadow: 0 4px 15px rgb(2, 89, 221);
@@ -382,7 +381,6 @@ section button:hover {
         color: #b0b0b0;
     }
 
-    .photo-gallery input[type="radio"]:checked + * + nav.photogallery label:nth-child(1) img,
     .photo-gallery input[type="radio"]:nth-of-type(1):checked ~ nav.photogallery label:nth-child(1) img {
         border-color: #ef9b8f;
         box-shadow: 0 4px 15px rgb(255, 136, 102);
